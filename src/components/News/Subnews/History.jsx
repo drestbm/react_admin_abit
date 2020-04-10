@@ -1,5 +1,5 @@
 import React from 'react';
-import css from '../News.module.css';
+import css from './History.module.css';
 
 
 function History() {
