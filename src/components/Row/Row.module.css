@@ -1,0 +1,27 @@
+.wrapper{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "name create publish";
+    justify-items: center;
+    background-color: rgb(54,57,63);
+    color: rgba(172, 172, 172);
+    height: 100%;
+    width: 100%;
+}
+
+.name{
+    grid-area: name;
+    margin: 0;
+}
+
+.create{
+    grid-area: create;
+    margin: 0;
+}
+
+.publish{
+    grid-area: publish;
+    margin: 0;
+}

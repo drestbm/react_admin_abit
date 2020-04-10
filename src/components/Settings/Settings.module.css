@@ -1,0 +1,82 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 1fr 1fr;
+    grid-template-areas: 
+        "."
+        "header"
+        "body";
+    height: 85%;
+}
+
+.header{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 1fr 1fr;
+    grid-template-areas: 
+        "title"
+        "general"
+        "substat";
+    height: 100%;
+    width: 100%;
+}
+
+.body{
+    grid-area: body;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 1fr 1fr;
+    grid-template-areas: 
+        "title"
+        "general"
+        "substat";
+    width: 100%;
+    height: 100%;
+}
+
+.title{
+    grid-area: title;
+    border-bottom: rgba(172, 172, 172, 0.1) solid 1px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.title h1{
+    margin: 0 0 30px 0;
+    color: rgba(172, 172, 172);
+    font-size: 25px;
+}
+
+.general{
+    grid-area: general;
+    border-bottom: rgba(172, 172, 172, 0.1) solid 1px;
+}
+
+.substat{
+    grid-area: substat;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas: "cell1 cell2 cell3 cell4";
+    
+    border-bottom: rgba(172, 172, 172, 0.1) solid 1px;
+}
+
+.cell1{
+    grid-area: cell1;
+    border-right: rgba(172, 172, 172, 0.1) solid 1px;
+}
+
+.cell2{
+    grid-area: cell2;
+    border-right: rgba(172, 172, 172, 0.1) solid 1px;
+}
+
+.cell3{
+    grid-area: cell3;
+    border-right: rgba(172, 172, 172, 0.1) solid 1px;
+}
+
+.cell4{
+    grid-area: cell4;
+}

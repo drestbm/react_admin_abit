@@ -1,0 +1,42 @@
+.app-wrapper{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 1fr;
+    grid-template-areas: 
+        "header"
+        "page";
+        background-color: rgb(29, 30, 34);
+    
+}
+
+.app-page{
+    grid-area: page;
+    height: 100%;
+    width: 100%;
+}
+
+.app-header{
+    grid-area: header;
+    z-index: 10;
+}
+
+.app-body{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 5% 10% 1fr 5%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        ". navbar content .";
+    box-shadow: 0 0 5px 0 black;
+    z-index: 0;
+}
+
+.app-navbar{
+    grid-area: navbar;
+}
+
+.app-content{
+    grid-area: content;
+    background-color: rgb(54,57,63);
+}

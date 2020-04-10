@@ -1,0 +1,27 @@
+.wrapper{
+    height: 100%;
+    background-color:rgb(47,49,54);
+}
+
+
+.item{
+    font-size: 16px;
+    border: none; 
+    outline: none;
+    background: none;
+    color: rgb(172, 172, 172);
+    height: 50px;
+    width: 100%;
+    padding-left: 15px;
+    text-align: start;
+    font-weight: bold;
+}
+
+.item:hover{
+    background-color: rgb(54,57,63);
+    cursor: pointer;
+}
+
+.active .item{
+    background-color: rgb(54,57,63);
+}
