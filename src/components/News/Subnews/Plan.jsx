@@ -1,24 +1,30 @@
 import React from 'react';
 import css from './Plan.module.css';
-import Row from '../../Row/Row'
+import Row from '../Row/Row'
+import HeaderRow from '../HeaderRow/HeaderRow'
 
 
 function Plan() {
   return (
     <div className={css.wrapper}>
-      <div className={css.header}>
-        <div className={css.name}>
-          <h1>Название</h1>
-        </div>
-        <div className={css.create}>
-          <h1>Дата создания</h1>
-        </div>
-        <div className={css.publish}>
-          <h1>Дата публикации</h1>
-        </div>
+      <div className={css.title}>
+        <HeaderRow name="Название" dateCreate="Дата создания" datePublish="Дата публикации"/>
       </div>
       <div className={css.list}>
-        <Row />
+        <Row name="new" dateCreate="11.11.1111" datePublish="11.11.1111"/>
+        <Row name="new" dateCreate="11.11.1111" datePublish="11.11.1111"/>
+        <Row name="new" dateCreate="11.11.1111" datePublish="11.11.1111"/>
+        <Row name="new" dateCreate="11.11.1111" datePublish="11.11.1111"/>
+        <Row name="new" dateCreate="11.11.1111" datePublish="11.11.1111"/>
+        <Row name="new" dateCreate="11.11.1111" datePublish="11.11.1111"/>
+        <Row name="new" dateCreate="11.11.1111" datePublish="11.11.1111"/>
+        <Row name="new" dateCreate="11.11.1111" datePublish="11.11.1111"/>
+        <Row name="new" dateCreate="11.11.1111" datePublish="11.11.1111"/>
+        <Row name="new" dateCreate="11.11.1111" datePublish="11.11.1111"/>
+        <Row name="new" dateCreate="11.11.1111" datePublish="11.11.1111"/>
+        <Row name="new" dateCreate="11.11.1111" datePublish="11.11.1111"/>
+        <Row name="new" dateCreate="11.11.1111" datePublish="11.11.1111"/>
+        <Row name="new" dateCreate="11.11.1111" datePublish="11.11.1111"/>
       </div>
     </div>
   );

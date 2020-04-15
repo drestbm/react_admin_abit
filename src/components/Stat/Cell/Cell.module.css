@@ -1,16 +1,17 @@
 .wrapper{
     grid-area: header;
     display: grid;
-    grid-template-rows: 1fr 50px 1fr;
+    grid-template-rows: 20px 35px 35px;
     grid-template-areas: 
         "title"
         "count"
         "icon";
+    grid-gap: 5px;
     justify-items: center;
-    background-color: rgb(54,57,63);
+    align-self: center;
     color: rgba(172, 172, 172);
-    height: 100%;
     width: 100%;
+    padding: 35px 0;
 }
 
 .title{
@@ -22,13 +23,15 @@
 }
 
 .count{
+    align-self: flex-start;
     grid-area: count;
     font-size: 35px;
     margin: 0;
 }
 
 .icon{
+    align-self: flex-start;
     grid-area: icon;
-    height: 30px;
+    height: 35px;
     margin: 0;
 }

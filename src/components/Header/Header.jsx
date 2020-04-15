@@ -9,18 +9,19 @@ function Header() {
         <img src="logo-mobile.png" alt="logo"/>
       </div>
       <div className={css.nav}>
-        <NavLink to="/stat/total/" activeClassName={css.active}>
+        <NavLink to="/stat/" activeClassName={css.active}>
           <button className={css.item}>Статистика</button>
         </NavLink>
-        <NavLink to="/news/add" activeClassName={css.active}>
+        <NavLink to="/news/" activeClassName={css.active}>
           <button className={css.item}>Новости</button>
         </NavLink>
-        <NavLink to="/tests/new" activeClassName={css.active}>
+        <NavLink to="/tests/" activeClassName={css.active}>
           <button className={css.item}>Тесты</button>
         </NavLink>
-        <NavLink to="/settings/new" activeClassName={css.active}>
+        <NavLink to="/settings/" activeClassName={css.active}>
           <button className={css.item}>Настройки</button>
         </NavLink>
+        {/* Сделать компоненты навлинков */}
       </div>
       <div className={css.exit}>
         <button className={css.item}>Выход</button>

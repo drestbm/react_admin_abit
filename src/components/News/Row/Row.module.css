@@ -1,0 +1,38 @@
+.wrapper{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 5fr 2fr 2fr 40px 40px 40px;
+    grid-template-areas: 
+        "name create publish . . .";
+    color: rgba(172, 172, 172);
+    padding: 20px 0;
+    margin: 20px 0;
+    border: rgb(54,57,63) solid 2px;
+}
+
+.wrapper h1{
+    margin: 0;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(172, 172, 172);
+}
+
+.name{
+    grid-area: name;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.create{
+    grid-area: create;
+    padding-left: 20px;
+    border-left: rgba(172, 172, 172, 0.2) solid 1px;
+    border-right: rgba(172, 172, 172, 0.2) solid 1px;
+    margin: 0;
+}
+
+.publish{
+    grid-area: publish;
+    padding-left: 20px;
+    margin: 0;
+}

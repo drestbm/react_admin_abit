@@ -1,0 +1,9 @@
+.wrapper{
+    grid-area: header;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    grid-auto-flow: rows;
+    width: 300px;
+    padding: 10px;
+    border: rgb(0, 0, 0, .4) solid 3px;
+}

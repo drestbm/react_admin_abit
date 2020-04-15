@@ -1,0 +1,32 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: 20px 1fr 20px;
+    grid-template-rows: 20px 20px;
+    grid-gap: 5px;
+    grid-template-areas: 
+        "title title title"
+        "previos month next";
+    justify-items: center;
+}
+
+.wrapper h1{
+    margin:0;
+    font-size: 18px;
+    color: rgba(172, 172, 172);
+}
+
+.title{
+    grid-area: title;
+}
+
+.previos{
+    grid-area: previos;
+}
+
+.next{
+    grid-area: next;
+}
+
+.month{
+    grid-area: month;
+}
