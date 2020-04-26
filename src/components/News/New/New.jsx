@@ -1,8 +1,8 @@
 import React from 'react';
-import css from './Add.module.css';
+import css from './New.module.css';
 
 
-function Add() {
+function New() {
   return (
     <div className={css.wrapper}>
       <input className={`${css.name} ${css.input}`} placeholder="Название" type="text"></input>
@@ -13,4 +13,4 @@ function Add() {
   );
 }
 
-export default Add;
+export default New;

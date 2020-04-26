@@ -33,11 +33,11 @@ const initialState = {
 
 function newsReduser(state = initialState, action) {
     switch(action.type){
-        case ADD:
+        case NEW:
             return state;
-        case PLAN:
+        case ACTION:
             return state;
-        case HISTORY:
+        case ARCH:
             return state;
         default:
             return state;

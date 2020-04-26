@@ -5,7 +5,7 @@
     grid-template-areas: 
         "header"
         "body";
-    background-color: rgb(29, 30, 34);
+    background-color: #1d1e22;
     
 }
 
@@ -63,3 +63,4 @@
 {
     background-color: rgb(40,42,45);
 }
+

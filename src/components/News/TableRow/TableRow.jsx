@@ -1,7 +1,7 @@
 import React from 'react';
-import css from './HeaderRow.module.css';
+import css from './TableRow.module.css';
 
-function HeaderRow(props) {
+function Row(props) {
   return (
     <div className={css.wrapper}>
       <h1 className={css.name}>
@@ -17,4 +17,4 @@ function HeaderRow(props) {
   );
 }
 
-export default HeaderRow;
+export default Row;

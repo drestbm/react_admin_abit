@@ -1,6 +1,6 @@
 .wrapper{
     height: 100%;
-    background-color:rgb(47,49,54);
+    background-color:#2f3136;
 }
 
 
@@ -9,7 +9,7 @@
     border: none; 
     outline: none;
     background: none;
-    color: rgb(172, 172, 172);
+    color: #acacac;
     height: 50px;
     width: 100%;
     padding-left: 15px;

@@ -3,7 +3,7 @@
     grid-template-columns: 5% 200px 1fr 100px 5%;
     grid-template-areas: ". logo nav exit .";
     align-items: center;
-    background-color: rgb(32,34,37);
+    background-color: #202225;
     height: 100%;
 }
 

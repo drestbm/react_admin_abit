@@ -1,0 +1,23 @@
+.Cal__MonthList__root {
+    color: #acacac;
+    background-color: #36393f !important;
+}
+
+.Cal__Month__rows{
+    background: linear-gradient(180deg,rgba(255, 255, 255, 0) 50%,#00000046) !important;
+}
+
+
+.Cal__Month__row.Cal__Month__partial:first-child li:first-child {
+    box-shadow: 0 -1px 0 #20222580, inset 1px 0 0 #20222580 !important;
+}
+
+.Cal__Month__row:first-child li {
+    background-color: #36393f !important;
+    box-shadow: 0 -1px 0 #20222580 !important;
+}
+
+.Cal__Month__row:nth-child(2) {
+    box-shadow: 0 -1px 0 #20222580 !important;
+}
+

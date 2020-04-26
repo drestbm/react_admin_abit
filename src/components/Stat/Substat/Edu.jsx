@@ -1,11 +1,8 @@
 import React from 'react';
 import css from '../Stat.module.css';
 import Cell from '../Cell/Cell'
-import Calendar from '../Calendar/Calendar';
-import Graphic from '../Graphic/Graphic';
 
-
-function Edu() {
+function Edu(props) {
   //const [startDate, setStartDate] = useState(new Date());
   return (
     <div className={css.wrapper}>
@@ -15,21 +12,24 @@ function Edu() {
       </div>
       <div className={css["top-3"]}>
         <div className={css.cell}>
-          <Cell title="Всего пользователей" count="2345" img="/total.svg"/>
+          <Cell title="Всего пользователей" count={props.edu.total} img="/total.svg"/>
         </div>
         <div className={css.cell}>
-          <Cell title="Популярные" count="2345" img="/month.svg"/>
+          <Cell title="В среднем из одного заведения" count={props.edu.avg} img="/month.svg"/>
         </div>
         <div className={`${css.cell} ${css["cell-last"]}` }>
-        <Cell title="Количество заведений" count="2345" img="/year.svg"/>
+        <Cell title="Количество заведений" count={props.edu.count} img="/year.svg"/>
         </div>
       </div>
       <div className={css.bottom}>
+        <div className={css["bottom-title"]}>
+          
+        </div>
         <div className={css.graphic}>
-          <Graphic/>
+
         </div>
         <div className={css.calendar}>
-          <Calendar/>
+
         </div>
       </div>
     </div>
