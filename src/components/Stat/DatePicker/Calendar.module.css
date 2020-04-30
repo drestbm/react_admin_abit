@@ -1,0 +1,51 @@
+.wrapper {
+    display: grid;
+    grid-template-rows: 25px 25px 1fr;
+    height: 200px;
+    width: 200px;
+}
+
+.weekday {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-auto-flow: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.weekday h1{
+    margin: 0;
+    font-size: 14px;
+}
+
+.body {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.header h1{
+    margin: 0;
+    font-size: 12px;
+}
+
+.header button{
+    border: none;
+    background: none;
+}
+
+.year,
+.month {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    align-items: center;
+}

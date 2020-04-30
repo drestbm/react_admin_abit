@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../Navbar/Navbar.jsx'
-import New from './Subsettings/New'
-import List from './Subsettings/List'
+import New from './New/New'
+import List from './List/List'
 import { Route } from 'react-router-dom';
 
 

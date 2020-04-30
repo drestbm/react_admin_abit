@@ -1,41 +1,43 @@
 import React from 'react';
 import css from '../Stat.module.css';
 import Cell from '../Cell/Cell'
-import Line from '../Graphics/Line/Line';
 import DatePicker from '../DatePicker/DatePicker';
+import Bar from '../Bar/Bar'
 
-function General(props) {
+
+function Sex(props) {
+  debugger
+  //const [startDate, setStartDate] = useState(new Date());
   return (
     <div className={css.wrapper}>
       <div className={css.title}>
         <h1>Статистика</h1>
-        <h2>по количеству пользователей</h2>
+        <h2>по полу пользователей</h2>
       </div>
       <div className={css["top-3"]}>
         <div className={css.cell}>
-          <Cell title="Всего пользователей" count={props.general.total} img="/total.svg"/>
+          <Cell title="Всего пользователей" count={props.state.total} img="/total.svg"/>
         </div>
         <div className={css.cell}>
-          <Cell title="В среднем за месяц" count={props.general.month} img="/month.svg"/>
+          <Cell title="Мужчин" count={props.state.man} img="/man.svg"/>
         </div>
         <div className={`${css.cell} ${css["cell-last"]}` }>
-        <Cell title="В среднем за год" count={props.general.year} img="/year.svg"/>
+        <Cell title="Женщин" count={props.state.woman} img="/woman.svg"/>
         </div>
       </div>
       <div className={css.bottom}>
         <div className={css["bottom-title"]}>
-          Статистика за период:
+          Статистика за определенный период
+        </div>
+        <div className={css.graphic}>
+          <Bar data={props.state.data} names={props.state.names}/>
         </div>
         <div className={css.calendar}>
           <DatePicker/>
         </div>
-        <div className={css.graphic}>
-          <Line data={props.general.data}/>
-        </div>
-        
       </div>
     </div>
   );
 }
 
-export default General;
+export default Sex;

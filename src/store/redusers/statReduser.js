@@ -3,7 +3,8 @@
 
 
 //switch const
-const GENERAL = 'GENERAL-STAT';
+const CHANGE_START_DATE = 'CHANGE_START_DATE';
+const CHANGE_END_DATE = 'CHANGE_END_DATE';
 const SEX = 'SEX-STAT';
 const AGE = 'AGE-STAT';
 const EDU = 'EDU-STAT';
@@ -149,7 +150,11 @@ const initialState = {
 
 function statReduser(state = initialState, action) {
     switch(action.type){
-        case GENERAL:
+        case CHANGE_START_DATE:
+            // state.general.from = action.start
+            return state;
+        case CHANGE_END_DATE:
+            // state.general.to = action.end
             return state;
         case SEX:
             return state;

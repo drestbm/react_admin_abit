@@ -1,8 +1,8 @@
 import React from 'react';
-import Navbar from '../Navbar/Navbar.jsx'
-import New from './Subtests/New'
-import Active from './Subtests/Active'
-import Arch from './Subtests/Arch'
+import Navbar from '../Navbar/Navbar'
+import New from './New/New'
+import Active from './Active/Active'
+import Arch from './Arch/Arch'
 import { Route } from 'react-router-dom';
 
 

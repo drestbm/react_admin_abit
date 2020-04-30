@@ -12,13 +12,13 @@ function Edu(props) {
       </div>
       <div className={css["top-3"]}>
         <div className={css.cell}>
-          <Cell title="Всего пользователей" count={props.edu.total} img="/total.svg"/>
+          <Cell title="Всего пользователей" count={props.state.total} img="/total.svg"/>
         </div>
         <div className={css.cell}>
-          <Cell title="В среднем из одного заведения" count={props.edu.avg} img="/month.svg"/>
+          <Cell title="В среднем из одного заведения" count={props.state.avg} img="/month.svg"/>
         </div>
         <div className={`${css.cell} ${css["cell-last"]}` }>
-        <Cell title="Количество заведений" count={props.edu.count} img="/year.svg"/>
+        <Cell title="Количество заведений" count={props.state.count} img="/year.svg"/>
         </div>
       </div>
       <div className={css.bottom}>

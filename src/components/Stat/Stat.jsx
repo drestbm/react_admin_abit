@@ -1,9 +1,9 @@
 import React from 'react';
 import Navbar from '../Navbar/Navbar.jsx'
-import General from './Substat/General'
-import Sex from './Substat/Sex'
-import Age from './Substat/Age'
-import Edu from './Substat/Edu'
+import General from './General/General'
+import Sex from './Sex/Sex'
+import Age from './Age/Age'
+import Edu from './Edu/Edu'
 import { Route } from 'react-router-dom';
 
 
@@ -20,10 +20,10 @@ function Stat(props) {
         <Navbar items={stat}/>
       </div>
       <div className="app-content">
-        <Route path="/stat/general" render={ () => <General general={props.state.general}/> }/>
-        <Route path="/stat/sex" render={ () => <Sex sex={props.state.sex}/> }/>
-        <Route path="/stat/age" render={ () => <Age age={props.state.age}/> }/>
-        <Route path="/stat/edu" render={ () => <Edu edu={props.state.edu}/> }/>
+        <Route path="/stat/general" render={ () => <General state={props.state.general} dispatch={props.dispatch}/> }/>
+        <Route path="/stat/sex" render={ () => <Sex state={props.state.sex}/> }/>
+        <Route path="/stat/age" render={ () => <Age state={props.state.age}/> }/>
+        <Route path="/stat/edu" render={ () => <Edu state={props.state.edu}/> }/>
       </div>
     </div>
   );

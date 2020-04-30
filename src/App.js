@@ -8,8 +8,8 @@ function App(props) {
   return (
     <div>
       <Switch>
-        <Route path="/login" render={()=><Login/>}/>
-        <Route path="/"render={()=><Main state={props.state}/>}/> 
+        <Route path="/login" render={()=><Login dispatch={props.dispatch}/>}/>
+        <Route path="/"render={()=><Main state={props.state} dispatch={props.dispatch}/>}/> 
       </Switch>
       <Switch>
         <Redirect from='/' to='/stat/general'/>

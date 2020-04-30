@@ -13,7 +13,7 @@ function Main(props) {
         <Header/>
       </div>
       <Route path="/news" render={ () => <News state={props.state.news}/> }/>
-      <Route path="/stat" render={ () => <Stat state={props.state.stat}/> }/>
+      <Route path="/stat" render={ () => <Stat state={props.state.stat} dispatch={props.dispatch}/> }/>
       <Route path="/tests" render={ () => <Tests state={props.state.tests}/> }/>
       <Route path="/settings" render={ () => <Settings state={props.state.settings}/> }/>
     </div>

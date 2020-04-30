@@ -1,0 +1,17 @@
+.wrapper{
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.wrapper:hover {
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.day{
+    margin: 7px 0;
+    font-size: 12px;
+}
+
