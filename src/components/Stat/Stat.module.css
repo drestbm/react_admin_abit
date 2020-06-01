@@ -56,7 +56,11 @@
 }
 
 .calendar{
-
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-flow: column;
+    justify-content: center;
+    align-content: center;
 } 
 
 .calendar input{
@@ -72,11 +76,30 @@
 }
 
 .bottom-title{
-    justify-self: center;
-    padding-top: 35px;
-    font-size: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-self: end;
+    padding: 25px;
+    font-size: 17px;
     color: #acacac;
 }
+
+.bottom-title a{
+    margin: 0 10px;
+    color: #4a548e;
+}
+
+.bottom-title a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #acacac;
+}
+
+.bottom-title a.active{
+    color: #acacac;
+}
+
+
 
 
 

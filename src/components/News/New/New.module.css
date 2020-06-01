@@ -1,5 +1,18 @@
 .wrapper{
     display: grid;
+    grid-template-rows: 90px 1fr;
+    height: 100%;
+}
+
+.wrapper h1{
+    margin: 0;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.body{
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 30px 1fr 25px 25px;
     grid-template-areas: 
@@ -11,13 +24,6 @@
     height: 85%;
     width: 90%;
     margin: 40px auto;
-}
-
-.wrapper h1{
-    margin: 0;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
 }
 
 .input{
@@ -72,4 +78,19 @@
 .btn:hover{
     background-color: rgb( 75, 183, 141 );
     cursor: pointer;
+}
+
+.title h1{
+    margin: 0 0 5px 0;
+    font-size: 25px;
+    color: #acacac;
+}
+
+.title{
+    border-bottom: #20222580 solid 2px;
+    text-align: center;
+    padding-top: 40px;
+    color: #acacac;
+    background-color: #36393f;
+    height: calc(100%-40px);
 }

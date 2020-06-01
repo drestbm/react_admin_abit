@@ -36,3 +36,11 @@
     padding-left: 20px;
     margin: 0;
 }
+
+.icon{
+    height: 25px;
+}
+
+.icon:hover{
+    cursor: pointer;
+}

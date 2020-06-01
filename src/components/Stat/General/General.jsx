@@ -2,7 +2,6 @@ import React from 'react';
 import css from '../Stat.module.css';
 import Cell from '../Cell/Cell'
 import Line from '../Line/Line';
-import DatePicker from '../DatePicker/DatePicker';
 import {startActionCreater, endActionCreater} from '../../../store/actions/statActionCreater'
 
 function General(props) {
@@ -36,11 +35,10 @@ function General(props) {
       </div>
       <div className={css.bottom}>
         <div className={css["bottom-title"]}>
-          Статистика за период:
-        </div>
-        <div className={css.calendar}>
-          <input onChange={changeStart} ref={start} type="date"/>
-          <input onChange={changeEnd} ref={end} type="date"/>
+          Статистика:
+          <a>за месяц</a>
+          <a>за год</a>
+          <a>за все время</a>
         </div>
         <div className={css.graphic}>
           <Line data={props.state.data}/>

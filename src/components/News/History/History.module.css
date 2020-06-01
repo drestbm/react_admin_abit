@@ -5,6 +5,7 @@
     grid-template-areas: 
         "title"
         "list";
+        height: 100%;
 }
 
 .title{
@@ -16,4 +17,6 @@
 .list{
     grid-area: list;
     padding: 10px 60px;
+    overflow: auto;
+    height: calc(100%-10px);
 }

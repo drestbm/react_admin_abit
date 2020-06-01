@@ -13,6 +13,9 @@ function Row(props) {
       <h1 className={css.publish}>
         {props.datePublish}
       </h1>
+      <img className={css.icon} src="/info.svg" alt="icon"/>
+      <img className={css.icon} src="/pencil.svg" alt="icon"/>
+      <img className={css.icon} src="/delete.svg" alt="icon"/>
     </div>
   );
 }

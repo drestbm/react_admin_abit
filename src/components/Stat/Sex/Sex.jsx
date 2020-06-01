@@ -1,7 +1,6 @@
 import React from 'react';
 import css from '../Stat.module.css';
 import Cell from '../Cell/Cell'
-import DatePicker from '../DatePicker/DatePicker';
 import Bar from '../Bar/Bar'
 
 
@@ -27,13 +26,13 @@ function Sex(props) {
       </div>
       <div className={css.bottom}>
         <div className={css["bottom-title"]}>
-          Статистика за определенный период
+          Статистика:
+          <a>за месяц</a>
+          <a>за год</a>
+          <a>за все время</a>
         </div>
         <div className={css.graphic}>
           <Bar data={props.state.data} names={props.state.names}/>
-        </div>
-        <div className={css.calendar}>
-          <DatePicker/>
         </div>
       </div>
     </div>
